@@ -90,7 +90,7 @@ span {
     "a b"
     "a c"; 
     gap: 10rem;
-    align-items: safe;
+    justify-content: space-between;
     margin: 0 auto;
     max-width: 900px;
     padding: 10px;
@@ -100,8 +100,7 @@ span {
 .poster {
     grid-area: a;
     width: 100%;
-    justify-self: left;
-        
+            
 }
 
 
@@ -109,9 +108,6 @@ span {
     grid-area: b;
     text-align: center;
     
-
-.rama h2, .rama video {
-    justify-self: right;
 }
 
 .rama video {
