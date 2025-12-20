@@ -1,0 +1,26 @@
+body {
+    background-color: #1c1c1c;
+    color: #00ff33;
+    font-family: cursive;
+}
+
+h1 {
+    font-style: italic;
+}
+
+hr {
+    height: 2px;
+    background-color: #62d75f;
+}
+
+.okvir {
+    display: flex;
+    justify-content: center;
+    gap: 2rem ;
+}
+
+.poster {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
