@@ -85,48 +85,45 @@ span {
 }
 
 .okvir {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-areas:
+    "a b"
+    "a c"
+    "a c"; 
+    grid-template-columns: 280px 1fr;
+    column-gap: 4rem;
+    align-items: start;
     margin: 0 auto;
-    padding: 2rem;
-    max-width: 900px; 
-    gap: 4rem;
-
-}
-
-.rama {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin-right: 3rem;
-
+    padding: 2rem 1rem 2rem 0;
+    max-width: 900px;
 }
 
 
 .poster {
-    width: 320px;                 
-    height: auto;
-    border-radius: 10px;
-    
+    grid-area: a;
+    width: 100%;
+    justify-self: start;
+        
 }
 
+
 .rama h2 {
-    margin: 0;
+    grid-area: b;
     text-align: center;
+    
+
+.rama h2, .rama video {
+    justify-self: end;
 }
 
 .rama video {
-    max-width: 100%;
-    border-radius: 10px;
+    grid-area: c;
+    width: 100%;
+    max-width: 640px;
+    aspect-ratio: 16 / 9;
     
 }
 
-
-.video-player {
-    height: 600px;
-    aspect-ratio: 16 / 9;
-}
 
 
 .slika {
