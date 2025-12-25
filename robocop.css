@@ -118,14 +118,24 @@ span {
     
 }
 
+ul {
+    list-style: none;
+}
 
+ul li::before {
+    content: "- ";
+}
+
+span{
+    color: #00ff33;
+}
 
 .slika {
     display: block;
     width: 50%;
     margin: 20px auto;
-
-    
+    padding-top: 40px;
+   
 }
 
 
