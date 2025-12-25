@@ -22,12 +22,25 @@ h3 {
     color: #d0d3d4;
 }
 
+.glazba {
+    text-align: center;
+}
 
 p {
     text-align: justify;
     line-height: 1.5;
     border: none;
+    width: 100%;
     
+}
+
+hr {
+    height: 2px;
+    background-color: #00ff33;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #00ff33;
 }
 
 .r2 { 
@@ -85,24 +98,26 @@ span {
 }
 
 .okvir {
-    display: grid;
-    grid-template-areas:
-    "a b"
-    "a c"; 
-    gap: 10rem;
+    
+    display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    max-width: 900px;
-    padding: 10px;
+    align-items: center;
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 20px;
 }
 
 
-.poster {
-    grid-area: a;
-    width: 100%;
-            
+.desno {
+    width: 70%;
+    margin: 20px;
 }
-
 
 .rama h2 {
     grid-area: b;
