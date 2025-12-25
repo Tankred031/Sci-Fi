@@ -16,11 +16,37 @@ hr {
 .okvir {
     display: flex;
     justify-content: center;
-    gap: 2rem ;
+    gap: 2rem;
+    padding: 60px 0;
 }
 
 .poster {
-    display: flex;
-    flex-direction: row;
-    padding: 30px;
+    /* display: flex;
+    flex-direction: row; */
+    padding: 5px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.poster:hover {
+  transform: scale(1.05);
+}
+
+.glow-orange:hover {
+  box-shadow: 0 0 20px 5px #00bfff;
+}
+
+.glow-red:hover {
+  box-shadow: 0 0 20px 5px #ff1a1a;
+}
+
+.glow-green:hover {
+  box-shadow: 0 0 20px 5px #00ff33;
+}
+
+.centar {
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
 }
