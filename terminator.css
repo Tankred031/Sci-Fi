@@ -69,4 +69,10 @@ audio::-webkit-media-controls-panel {
     background-color: #ff1a1a;
 }
 
-
+.slika {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    padding-top: 40px;
+   
+}
