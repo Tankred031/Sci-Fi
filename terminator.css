@@ -65,4 +65,8 @@ video {
     margin: 120px 500px;
 }
 
+audio::-webkit-media-controls-panel {
+    background-color: #ff1a1a;
+}
+
 
