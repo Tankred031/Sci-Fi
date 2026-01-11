@@ -13,15 +13,21 @@ a {
     color: #ff1a1a;
 }
 
-img {
+.poster {
+    float: left;
+    margin: 20px 30px 10px 20px;
     border: 5px solid #ff1a1a;
     box-shadow: 0 0 15px 5px #a6a9aa;
-    float: left;
-    margin: 20px;
 }
 
+.ispod-slike {
+    clear: left;       /* ⬅ spušta tekst ispod postera */
+    margin-left: 20px;
+    font-style: italic;
+}
+
+
 .desno {
-    display: block;
     margin: 20px;
     line-height: 1.8;
 }
@@ -37,3 +43,26 @@ span {
 .rc {
     color: #00ff33;
 }
+
+video {
+    display: block;
+    margin: 40px auto 10px;
+    clear: both;
+}
+
+.podnaslov {
+    font-size: small;
+    text-align: center;
+    font-style: italic;
+}
+
+.desni-blok {
+    margin-left: 360px;
+}
+
+.lista {
+    width: 60%;
+    margin: 120px 500px;
+}
+
+
