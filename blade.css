@@ -68,7 +68,8 @@ table {
     border: 1px solid #00bfff;
     text-align: center;
     border-collapse: collapse;
-    margin: 0 auto;
+    margin: 40px auto;
+    
 }
 
 caption {

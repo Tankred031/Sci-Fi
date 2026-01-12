@@ -15,6 +15,7 @@ h1 {
 h2 {
     font-style: oblique;
     color: #66ff66;
+    text-align: center;
 }
 
 h3 {
@@ -119,7 +120,7 @@ span {
     margin: 20px;
 }
 
-.rama h2 {
+/* .rama h2 {
     grid-area: b;
     text-align: center;
     
@@ -131,7 +132,7 @@ span {
     max-width: 640px;
     aspect-ratio: 16 / 9;
     
-}
+} */
 
 ul {
     list-style: none;
@@ -165,4 +166,31 @@ span{
 .green {
     color: #00ff33;
     text-decoration-color: #00ff33 ;
+}
+
+
+.rama {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.trailer video {
+    width: 640px;
+    max-width: 100%;
+}
+
+.lista {
+    display: block;
+    padding: 20px;
+    padding-right: 60px;
+    width: 40%;
+}
+
+.lista li {
+    white-space: nowrap;
 }
