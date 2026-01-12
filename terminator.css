@@ -1,3 +1,9 @@
+:root {
+    --poster-width: 260px;
+    --video-width: 640px;
+}
+
+
 body {
     background-color: #0a0a0a;
     color: #a6a9aa;
@@ -13,122 +19,106 @@ a {
     color: #ff1a1a;
 }
 
+span {
+    color: #ff1a1a;
+}
+
+.br { color: #ff6f3c; }
+.rc { color: #00ff33; }
+
+hr {
+    margin: 20px 0 40px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: var(--poster-width) 1fr;
+    gap: 3rem;
+
+    max-width: 1200px;
+    margin: 40px auto;
+    align-items: start;
+}
+
+
+.lijevo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.poster,
+.poster-b,
+.poster-c {
+    width: var(--poster-width);
+    height: auto;
+}
+
 .poster {
-    float: left;
-    margin: 20px 30px 10px 20px;
     border: 5px solid #ff1a1a;
     box-shadow: 0 0 15px 5px #a6a9aa;
 }
 
 .poster-b {
-    margin: 20px 30px 10px 20px;
     border: 5px solid #0a0a0a;
     box-shadow: 0 0 15px 5px #ff1a1a;
 }
 
 .poster-c {
-    margin: 20px 30px 10px 20px;
     border: 5px solid #ff1a1a;
     box-shadow: 0 0 15px 5px #0a0a0a;
 }
 
-.citat-a, .citat-b {
-    padding: 10px 10px 10px 14px;
-    font-style: italic;
-    text-align: center;
-    margin: 12px 0;
-   
-}
 
-.citat-b {
-    border-left: 5px solid #ff1a1a;
-    padding: 10px;
-    background-color: #0a0a0a;
-    color: #ff1a1a;
-}
 
-.citat-a {
-    background-color: white;
-    border-left: 5px solid #0a0a0a;
-    border-bottom: 5px solid #0a0a0a;
-    border-right: 5px solid #0a0a0a;
-}
-
-.ispod-slike {
-    clear: left;       /* ⬅ spušta tekst ispod postera */
-    margin-left: 20px;
-    font-style: italic;
+.lista {
+    padding-left: 20px;
+    list-style-position: inside;
+    font-size: 0.95rem;
 }
 
 
 .desno {
-    margin: 20px;
+    max-width: 700px;
+    background: #111;
+    padding: 24px;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.desno p {
     line-height: 1.8;
 }
 
-span {
-    color: #ff1a1a;
-}
-
-.br {
-    color: #ff6f3c;
-}
-
-.rc {
-    color: #00ff33;
-}
-
-video {
-    display: block;
-    margin: 40px auto 10px;
-    clear: both;
+.video-block video {
+    width: var(--video-width);
+    max-width: 100%;
 }
 
 .podnaslov {
-    font-size: small;
     text-align: center;
+    font-size: small;
     font-style: italic;
-}
-
-.desni-blok {
-    margin-left: 360px;
-}
-
-
-audio::-webkit-media-controls-panel {
-    background-color: #ff1a1a;
-}
-
-.header-t2 {
-    text-align: right;
+    margin-top: 5px;
 }
 
 
 .kartice {
     display: flex;
     gap: 20px;
-    align-items: stretch;
     justify-content: center;
+
     max-width: 1440px;
     margin: 0 auto;
-    color: #0a0a0a;
     padding-bottom: 50px;
-}
 
-.card.text {
-    flex: 2.4;
-    max-width: 55%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
+    color: #0a0a0a;
 }
-
-.card.text audio {
-    align-self: center;
-}
-
 
 .card {
     background: #a6a9aa;
@@ -137,69 +127,45 @@ audio::-webkit-media-controls-panel {
     flex: 1;
 }
 
+.card.text {
+    flex: 2.4;
+    max-width: 55%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.card.text audio {
+    align-self: center;
+}
+
 .card.photo {
-    flex: 0 0 auto;
-    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .card.photo img {
-    max-width: 260px; 
+    width: var(--poster-width);
     height: auto;
     border-radius: 6px;
 }
 
 .card.list {
     display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    justify-content: center;
-    text-align: center;
-    gap: 10px; 
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
 
 .card.list .lista {
+    width: 100%;
+    margin-top: 20px;
     text-align: left;
-    width: 100%;       
-    margin-top: 20px;  
-    padding-left: 20px;
 }
 
-.card.list ul {
-    margin: 0;
-    padding: 0;
-    list-style-position: inside;
-}
-
-.card.list ul {
-    margin-top: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.slika {
-    display: block;
-    width: 50%;
-    margin: 20px auto;
-    padding-top: 40px;
-   
-}
 
 .okvir {
     display: flex;
@@ -214,24 +180,60 @@ audio::-webkit-media-controls-panel {
     align-items: center;
 }
 
-.lista {
-    margin: 10px 0 0;
-    padding-left: 20px;
-    padding-top: 10px;
-    list-style-position: inside;
-    text-align: left;
-    width: 100%;
+
+.citat-a,
+.citat-b {
+    padding: 10px 14px;
+    font-style: italic;
+    text-align: center;
+    margin: 12px 0;
 }
 
-hr {
-    margin-top: 20px;
-    margin-bottom: 40px;
+.citat-a {
+    background: white;
+    border: 5px solid #0a0a0a;
 }
+
+.citat-b {
+    background: #0a0a0a;
+    color: #ff1a1a;
+    border-left: 5px solid #ff1a1a;
+}
+
+
 .kraj {
-    display: block;
     text-align: center;
-    gap: 3rem;
 }
+
 .slika {
-    padding-bottom: 40px;
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    padding: 40px 0;
+}
+
+
+.audio-red::-webkit-media-controls-panel {
+    background-color: #ff1a1a;
+}
+
+.audio-black::-webkit-media-controls-panel {
+    background-color: #a6a9aa;
+}
+
+
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .desno {
+        max-width: 100%;
+    }
+
+    .video-block video {
+        margin: 0 auto;
+        display: block;
+    }
 }
