@@ -243,3 +243,55 @@ i {
     background-color: #a6a9aa;
 }
 
+.header-t2 {
+    text-align: right;
+}
+
+table {
+
+}
+
+table {
+    width: 80%;
+    border: 1px solid #a6a9aa;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 40px auto;
+    margin-bottom: 40px;
+    
+}
+
+h4 {
+    color: #ff1a1a;
+    text-align: center;
+    font-size: large;
+}
+
+caption {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #ff1a1a;
+}
+
+thead {
+    background-color: #0a0a0a;
+    color: #ff1a1a;
+    
+}
+
+thead th {
+    border-left: 1px solid #a6a9aa;
+    border-right: 1px solid #a6a9aa;
+    padding: 10px;
+}
+
+tbody tr td {
+    border: 1px solid #0a0a0a;
+    padding: 10px;
+    color: #0a0a0a;
+    background-color: #a6a9aa;
+}
+
+tbody td:first-child {
+    font-weight: bold;
+}
