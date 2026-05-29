@@ -27,6 +27,8 @@ hr {
     border-radius: 8px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     cursor: pointer;
+
+  
 }
 
 .poster:hover {
@@ -49,4 +51,10 @@ hr {
     text-align: center;
     font-family: monospace;
     font-size: x-large;
+}
+
+footer {
+  font-size: small;  
+  display: block;
+  text-align: center;
 }
