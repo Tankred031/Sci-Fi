@@ -1,0 +1,44 @@
+Folder PATH listing
+Volume serial number is 0000005F AE43:A6AC
+C:.
+|   blade.css
+|   blade.html
+|   robocop.css
+|   robocop.html
+|   struktura.txt
+|   tablica.html
+|   terminator.css
+|   terminator.html
+|   uvod.css
+|   uvod.html
+|   
+\---media
+        2049.mp3
+        2049.webp
+        arnie.webp
+        BladeRunner.jpg
+        BR.png
+        Burning in the Third Degree.mp3
+        cain.jpg
+        End Titles.mp3
+        GPT Image BR.png
+        GPT Image RC.png
+        GPT Image TR.png
+        RC.png
+        Robo2poster.png
+        Robocop theme.mp3
+        RoboCop.jpg
+        Robocop.mp4
+        robocop.png
+        RoboCop_(2014_film)_poster.jpg
+        t2.jpg
+        t3.jpg
+        t4.webp
+        t5.jpg
+        t6.jpg
+        Tears in Rain.mp3
+        Terminator.mp4
+        Terminator.webp
+        The Terminator Soundtrack - Main Theme.mp3
+        TR.png
+        
